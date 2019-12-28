@@ -1,3 +1,4 @@
+import { Header, Sidebar, Layout } from './compounds'
 import { Button, Tag } from './atoms'
 
-export { Button, Tag }
+export { Layout, Header, Sidebar, Button, Tag }
