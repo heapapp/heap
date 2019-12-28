@@ -1,13 +1,24 @@
 import React from 'react'
-import styled, { ThemeProvider } from 'styled-components'
-import {} from './styles'
+import { ThemeProvider } from 'styled-components'
+
+import { GlobalStyle } from './styles'
 
 const theme = {
-   color: '#000',
+   colors: {
+      dark: '#1F1F23',
+      moreDark: '#19191C',
+      mutedDark: '#55555F',
+      denimBlue: '#1659DB',
+      ligthBlue: '#7CA4F0',
+      literalWhite: '#FFFFFF',
+   },
 }
 
 const Layout = ({ children }) => (
-   <ThemeProvider theme={theme}>{children}</ThemeProvider>
+   <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      {children}
+   </ThemeProvider>
 )
 
 export default Layout
