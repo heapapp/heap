@@ -9,6 +9,7 @@ export const GlobalStyle = createGlobalStyle`
    }
 
    body {
+      overflow: hidden;
       -o-font-smoothing: antialiased;
       -moz-font-smoothing: antialiased;
       -webkit-font-smoothing: antialiased;
@@ -57,5 +58,32 @@ export const GlobalStyle = createGlobalStyle`
       font-style: normal;
       font-weight: 800;
       src: url('/static/fonts/RoobertHeavy.woff') format('woff');
+   }
+`
+
+export const StyledLayout = styled.div`
+   display: grid;
+   grid-template-columns: 240px 1fr;
+   grid-template-rows: 64px 1fr;
+   grid-template-areas:
+      'head head'
+      'aside main';
+   > header {
+      grid-area: head;
+   }
+   > aside {
+      grid-area: aside;
+   }
+   > main {
+      grid-area: main;
+      padding: 0 16px 16px 16px;
+      height: calc(100vh - 64px);
+      > div {
+         height: 100%;
+         padding: 16px;
+         overflow-y: auto;
+         border-radius: 8px;
+         background: ${({ theme }) => theme.colors.sortaDark};
+      }
    }
 `

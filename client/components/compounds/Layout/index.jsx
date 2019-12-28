@@ -1,11 +1,12 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
 
-import { GlobalStyle } from './styles'
+import { GlobalStyle, StyledLayout } from './styles'
 
 const theme = {
    colors: {
       dark: '#303035',
+      sortaDark: '#1F1F23',
       moreDark: '#19191C',
       mutedDark: '#55555F',
       denimBlue: '#1659DB',
@@ -17,7 +18,7 @@ const theme = {
 const Layout = ({ children }) => (
    <ThemeProvider theme={theme}>
       <GlobalStyle />
-      {children}
+      <StyledLayout>{children}</StyledLayout>
    </ThemeProvider>
 )
 
