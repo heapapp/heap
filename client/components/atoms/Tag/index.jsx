@@ -1,6 +1,6 @@
 import React from 'react'
-import {} from './styles'
+import { StyledTag } from './styles'
 
-const Tag = ({ children }) => <span>{children}</span>
+const Tag = ({ children }) => <StyledTag>{children}</StyledTag>
 
 export default Tag
