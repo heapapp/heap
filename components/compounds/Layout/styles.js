@@ -9,7 +9,12 @@ export const GlobalStyle = createGlobalStyle`
    }
 
    body {
+      -o-font-smoothing: antialiased;
+      -moz-font-smoothing: antialiased;
+      -webkit-font-smoothing: antialiased;
       font-family: 'Roobert', sans-serif;
+      color: ${({ theme }) => theme.colors.literalWhite};
+      background: ${({ theme }) => theme.colors.moreDark};
    }
 
    @font-face {
