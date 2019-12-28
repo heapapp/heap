@@ -5,7 +5,7 @@ import { GlobalStyle } from './styles'
 
 const theme = {
    colors: {
-      dark: '#1F1F23',
+      dark: '#303035',
       moreDark: '#19191C',
       mutedDark: '#55555F',
       denimBlue: '#1659DB',
