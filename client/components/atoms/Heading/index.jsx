@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyledH1, StyledH2, StyledH3, StyledH4 } from './styles'
+import { StyledH1, StyledH2, StyledH3, StyledH4, StyledH5 } from './styles'
 
 const Heading = ({ type, children }) => {
    switch (type) {
@@ -11,6 +11,8 @@ const Heading = ({ type, children }) => {
          return <StyledH3>{children}</StyledH3>
       case 'h4':
          return <StyledH4>{children}</StyledH4>
+      case 'h5':
+         return <StyledH5>{children}</StyledH5>
       default:
          return <StyledH1>{children}</StyledH1>
    }

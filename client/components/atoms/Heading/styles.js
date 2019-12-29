@@ -20,6 +20,12 @@ export const StyledH3 = styled.h3`
 
 export const StyledH4 = styled.h4`
    font-size: 20px;
-   font-weight: 500;
+   font-weight: 400;
    line-height: 30px;
+`
+
+export const StyledH5 = styled.h4`
+   font-size: 18px;
+   font-weight: 300;
+   line-height: 27px;
 `
