@@ -5,4 +5,7 @@ export const StyledP = styled.p`
    font-weight: 300;
    line-height: 24px;
    letter-spacing: 0.2px;
+   a {
+      color: ${({ theme }) => theme.colors.ligthBlue};
+   }
 `
