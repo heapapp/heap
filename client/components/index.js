@@ -1,4 +1,4 @@
-import { Header, Sidebar, Layout, Main } from './compounds'
+import { Header, Sidebar, Layout, Main, VideoPlayer } from './compounds'
 import { Button, Tag, Heading, Para, Anchor, Input, Video } from './atoms'
 import { Tags, Videos } from './molecules'
 
@@ -7,6 +7,7 @@ export {
    Header,
    Sidebar,
    Main,
+   VideoPlayer,
    Video,
    Button,
    Tag,
