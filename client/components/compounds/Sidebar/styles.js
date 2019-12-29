@@ -34,6 +34,8 @@ export const ListItem = styled.li`
    align-items: center;
    letter-spacing: 0.3px;
    color: ${({ theme }) => theme.colors.literalWhite};
+   background: ${({ isActive, theme }) =>
+      isActive ? theme.colors.moreDark : 'transparent'};
    &:hover {
       background: ${({ theme }) => theme.colors.moreDark};
    }
