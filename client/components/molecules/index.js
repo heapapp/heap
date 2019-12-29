@@ -1,3 +1,4 @@
 import Tags from './Tags'
+import Videos from './Videos'
 
-export { Tags }
+export { Tags, Videos }

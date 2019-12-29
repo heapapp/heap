@@ -1,6 +1,6 @@
 import { Header, Sidebar, Layout, Main } from './compounds'
 import { Button, Tag, Heading, Para, Anchor, Input, Video } from './atoms'
-import { Tags } from './molecules'
+import { Tags, Videos } from './molecules'
 
 export {
    Layout,
@@ -14,5 +14,6 @@ export {
    Para,
    Anchor,
    Tags,
+   Videos,
    Input,
 }
