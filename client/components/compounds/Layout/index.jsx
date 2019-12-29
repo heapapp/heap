@@ -3,6 +3,8 @@ import { ThemeProvider } from 'styled-components'
 
 import { GlobalStyle, StyledLayout } from './styles'
 
+import { Header, Sidebar, Main } from '../../index'
+
 const theme = {
    colors: {
       dark: '#303035',
@@ -18,7 +20,11 @@ const theme = {
 const Layout = ({ children }) => (
    <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <StyledLayout>{children}</StyledLayout>
+      <StyledLayout>
+         <Header home="/" />
+         <Sidebar />
+         <Main>{children}</Main>
+      </StyledLayout>
    </ThemeProvider>
 )
 
