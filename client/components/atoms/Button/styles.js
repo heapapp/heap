@@ -1,45 +1,37 @@
 import styled, { css } from 'styled-components'
 
-export const StyledButton = styled.button(
-   ({ variant, theme, withIcon, position }) => css`
-      width: auto;
+const selectType = (colors, type, typeColor) => {
+   const color = typeColor.includes('.')
+      ? colors[typeColor.split('.')[0]][typeColor.split('.')[1]]
+      : colors[typeColor]
+
+   switch (type) {
+      case 'solid':
+         return css`
+            border: none;
+            background: ${color};
+         `
+      case 'outline':
+         return css`
+            background: transparent;
+            border: 1px solid ${color};
+         `
+      default:
+         return css`
+            border: none;
+            background: ${color};
+         `
+   }
+}
+
+export const StyledTextButton = styled.button(
+   ({ theme: { colors }, type, typeColor }) => css`
       height: 40px;
-      border: none;
-      font-size: 14px;
       padding: 0 12px;
       cursor: pointer;
-      font-weight: 500;
+      font-size: 16px;
       border-radius: 8px;
-      letter-spacing: 0.3px;
-      vertical-align: bottom;
-      ${variant === 'primary' &&
-         css`
-            color: ${theme.colors.white};
-            background: ${theme.colors.blue['400']};
-         `};
-      ${variant === 'secondary' &&
-         css`
-            color: ${theme.colors.white};
-            background: ${theme.colors.dark['200']};
-         `};
-      ${withIcon &&
-         css`
-            display: inline-flex;
-            align-items: center;
-         `}
-      ${withIcon &&
-         position &&
-         css`
-            span {
-               ${position === 'left' &&
-                  css`
-                     margin-left: 8px;
-                  `}
-               ${position === 'right' &&
-                  css`
-                     margin-right: 8px;
-                  `}
-            }
-         `}
+      color: ${colors.white};
+      ${selectType(colors, type, typeColor)}
    `
 )

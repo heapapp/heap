@@ -1,5 +1,5 @@
 import { Header, Sidebar, Layout, Main, VideoPlayer } from './compounds'
-import { Button, Tag, Heading, Para, Anchor, Input, Video } from './atoms'
+import { TextButton, Tag, Heading, Para, Anchor, Input, Video } from './atoms'
 import { Tags, Videos } from './molecules'
 
 export {
@@ -9,7 +9,7 @@ export {
    Main,
    VideoPlayer,
    Video,
-   Button,
+   TextButton,
    Tag,
    Heading,
    Para,
