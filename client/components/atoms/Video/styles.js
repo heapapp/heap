@@ -11,7 +11,7 @@ export const Thumbnail = styled.div`
    padding-top: 56.25%;
    margin-bottom: 16px;
    position: relative;
-   background: ${({ theme }) => theme.colors.dark};
+   background: ${({ theme }) => theme.colors.dark['200']};
    img {
       position: absolute;
       top: -16.5%;
@@ -28,6 +28,6 @@ export const Details = styled.div`
       width: 40px;
       border-radius: 50%;
       display: inline-block;
-      background: ${({ theme }) => theme.colors.dark};
+      background: ${({ theme }) => theme.colors.dark['200']};
    }
 `

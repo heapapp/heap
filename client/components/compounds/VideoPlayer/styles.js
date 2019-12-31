@@ -31,6 +31,6 @@ export const Description = styled.div`
       margin-bottom: 8px;
       display: inline-block;
       text-transform: uppercase;
-      color: ${({ theme }) => theme.colors.mutedDark};
+      color: ${({ theme }) => theme.colors.dark['100']};
    }
 `

@@ -12,7 +12,7 @@ export const Brand = styled.div`
    height: inherit;
    padding: 0 16px;
    align-items: center;
-   background: ${({ theme }) => theme.colors.denimBlue};
+   background: ${({ theme }) => theme.colors.blue['400']};
 `
 
 export const Main = styled.main`

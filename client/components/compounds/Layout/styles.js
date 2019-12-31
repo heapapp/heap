@@ -14,8 +14,8 @@ export const GlobalStyle = createGlobalStyle`
       -moz-font-smoothing: antialiased;
       -webkit-font-smoothing: antialiased;
       font-family: 'Roobert', sans-serif;
-      color: ${({ theme }) => theme.colors.literalWhite};
-      background: ${({ theme }) => theme.colors.moreDark};
+      color: ${({ theme }) => theme.colors.white};
+      background: ${({ theme }) => theme.colors.dark['400']};
    }
 
    @font-face {

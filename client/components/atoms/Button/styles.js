@@ -14,13 +14,13 @@ export const StyledButton = styled.button(
       vertical-align: bottom;
       ${variant === 'primary' &&
          css`
-            color: ${theme.colors.literalWhite};
-            background: ${theme.colors.denimBlue};
+            color: ${theme.colors.white};
+            background: ${theme.colors.blue['400']};
          `};
       ${variant === 'secondary' &&
          css`
-            color: ${theme.colors.literalWhite};
-            background: ${theme.colors.dark};
+            color: ${theme.colors.white};
+            background: ${theme.colors.dark['200']};
          `};
       ${withIcon &&
          css`

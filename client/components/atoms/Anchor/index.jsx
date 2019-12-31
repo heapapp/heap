@@ -17,7 +17,7 @@ const StyledLink = styled.a`
    line-height: 24px;
    letter-spacing: 0.2px;
    text-decoration: none;
-   color: ${({ theme }) => theme.colors.ligthBlue};
+   color: ${({ theme }) => theme.colors.blue['100']};
    &:hover {
       text-decoration: underline;
    }

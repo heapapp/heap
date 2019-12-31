@@ -6,6 +6,6 @@ export const StyledP = styled.p`
    line-height: 24px;
    letter-spacing: 0.2px;
    a {
-      color: ${({ theme }) => theme.colors.ligthBlue};
+      color: ${({ theme }) => theme.colors.blue['100']};
    }
 `

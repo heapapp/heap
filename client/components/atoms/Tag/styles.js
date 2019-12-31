@@ -7,5 +7,5 @@ export const StyledTag = styled.span`
    line-height: 32px;
    border-radius: 4px;
    display: inline-block;
-   background: ${({ theme }) => theme.colors.dark};
+   background: ${({ theme }) => theme.colors.dark['200']};
 `

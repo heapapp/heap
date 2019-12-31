@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const StyledSidebar = styled.aside`
    width: 240px;
    height: calc(100vh - 64px);
-   background: ${({ theme }) => theme.colors.sortaDark};
+   background: ${({ theme }) => theme.colors.dark['300']};
 `
 
 export const Section = styled.section`
@@ -18,8 +18,8 @@ export const Header = styled.header`
    font-weight: 600;
    align-items: center;
    text-transform: uppercase;
-   color: ${({ theme }) => theme.colors.mutedDark};
-   border-bottom: 1px solid ${({ theme }) => theme.colors.dark};
+   color: ${({ theme }) => theme.colors.dark['100']};
+   border-bottom: 1px solid ${({ theme }) => theme.colors.dark['200']};
 `
 
 export const List = styled.ul``
@@ -33,10 +33,10 @@ export const ListItem = styled.li`
    font-weight: 300;
    align-items: center;
    letter-spacing: 0.3px;
-   color: ${({ theme }) => theme.colors.literalWhite};
+   color: ${({ theme }) => theme.colors.white};
    background: ${({ isActive, theme }) =>
-      isActive ? theme.colors.moreDark : 'transparent'};
+      isActive ? theme.colors.dark['400'] : 'transparent'};
    &:hover {
-      background: ${({ theme }) => theme.colors.moreDark};
+      background: ${({ theme }) => theme.colors.dark['400']};
    }
 `

@@ -8,9 +8,9 @@ export const StyledInput = styled.input`
    font-weight: 500;
    border-radius: 8px;
    padding: 0 12px 3px 12px;
-   background: ${({ theme }) => theme.colors.dark};
-   color: ${({ theme }) => theme.colors.literalWhite};
+   background: ${({ theme }) => theme.colors.dark['200']};
+   color: ${({ theme }) => theme.colors.white};
    &::placeholder {
-      color: ${({ theme }) => theme.colors.mutedDark};
+      color: ${({ theme }) => theme.colors.dark['100']};
    }
 `
