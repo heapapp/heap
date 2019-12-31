@@ -1,31 +1,41 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
-export const StyledH1 = styled.h1`
-   font-size: 40px;
-   font-weight: 600;
-   line-height: 60px;
-`
+export const StyledH1 = styled.h1(
+   ({ theme: { typography } }) => css`
+      font-size: ${typography.h1.fS};
+      font-weight: ${typography.h1.fW};
+      line-height: ${typography.h1.lH};
+   `
+)
 
-export const StyledH2 = styled.h2`
-   font-size: 32px;
-   font-weight: 500;
-   line-height: 48px;
-`
+export const StyledH2 = styled.h2(
+   ({ theme: { typography } }) => css`
+      font-size: ${typography.h2.fS};
+      font-weight: ${typography.h2.fW};
+      line-height: ${typography.h2.lH};
+   `
+)
 
-export const StyledH3 = styled.h3`
-   font-size: 24px;
-   font-weight: 500;
-   line-height: 36px;
-`
+export const StyledH3 = styled.h3(
+   ({ theme: { typography } }) => css`
+      font-size: ${typography.h3.fS};
+      font-weight: ${typography.h3.fW};
+      line-height: ${typography.h3.lH};
+   `
+)
 
-export const StyledH4 = styled.h4`
-   font-size: 20px;
-   font-weight: 400;
-   line-height: 30px;
-`
+export const StyledH4 = styled.h4(
+   ({ theme: { typography } }) => css`
+      font-size: ${typography.h4.fS};
+      font-weight: ${typography.h4.fW};
+      line-height: ${typography.h4.lH};
+   `
+)
 
-export const StyledH5 = styled.h4`
-   font-size: 18px;
-   font-weight: 300;
-   line-height: 27px;
-`
+export const StyledH5 = styled.h4(
+   ({ theme: { typography } }) => css`
+      font-size: ${typography.h5.fS};
+      font-weight: ${typography.h5.fW};
+      line-height: ${typography.h5.lH};
+   `
+)

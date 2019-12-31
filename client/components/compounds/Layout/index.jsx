@@ -23,6 +23,13 @@ const theme = {
       danger: '#E54D2B',
       success: '#0FD35E',
    },
+   typography: {
+      h1: { fS: '40px', fW: 500, lH: '60px' },
+      h2: { fS: '32px', fW: 500, lH: '48px' },
+      h3: { fS: '24px', fW: 500, lH: '36px' },
+      h4: { fS: '20px', fW: 400, lH: '30px' },
+      h5: { fS: '18px', fW: 300, lH: '27px' },
+   },
 }
 
 const Layout = ({ children }) => (
