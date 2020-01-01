@@ -15,6 +15,10 @@ const selectType = (colors, type, typeColor) => {
          return css`
             background: transparent;
             border: 1px solid ${color};
+            &:hover {
+               background: ${color};
+               border: 1px solid transparent;
+            }
          `
       default:
          return css`
