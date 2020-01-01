@@ -2,6 +2,7 @@ import { Sidebar, Layout, Main, VideoPlayer } from './compounds'
 import {
    TextButton,
    IconButton,
+   ComboButton,
    Tag,
    Heading,
    Para,
@@ -19,6 +20,7 @@ export {
    Video,
    TextButton,
    IconButton,
+   ComboButton,
    Tag,
    Heading,
    Para,

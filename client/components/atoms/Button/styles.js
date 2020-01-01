@@ -54,3 +54,21 @@ export const StyledIconButton = styled.button(
       }
    `
 )
+
+export const StyledComboButton = styled.button(
+   ({ theme: { colors }, type, typeColor, position }) =>
+      css`
+         height: 40px;
+         padding: 0 12px;
+         cursor: pointer;
+         font-size: 16px;
+         border-radius: 8px;
+         color: ${colors.white};
+         display: flex;
+         align-items: center;
+         svg {
+            margin: ${position === 'left' ? '0 8px 0 0' : '0 0 0 8px'};
+         }
+         ${selectType(colors, type, typeColor)}
+      `
+)
