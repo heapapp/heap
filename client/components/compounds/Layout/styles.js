@@ -38,27 +38,6 @@ export const GlobalStyle = createGlobalStyle`
       font-weight: 500;
       src: url('/static/fonts/RoobertMedium.woff') format('woff');
    }
-
-   @font-face {
-      font-family: 'Roobert';
-      font-style: normal;
-      font-weight: 600;
-      src: url('/static/fonts/RoobertSemiBold.woff') format('woff');
-   }
-
-   @font-face {
-      font-family: 'Roobert';
-      font-style: normal;
-      font-weight: 700;
-      src: url('/static/fonts/RoobertBold.woff') format('woff');
-   }
-
-   @font-face {
-      font-family: 'Roobert';
-      font-style: normal;
-      font-weight: 800;
-      src: url('/static/fonts/RoobertHeavy.woff') format('woff');
-   }
 `
 
 export const StyledLayout = styled.div`
