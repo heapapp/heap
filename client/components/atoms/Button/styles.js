@@ -39,3 +39,18 @@ export const StyledTextButton = styled.button(
       ${selectType(colors, type, typeColor)}
    `
 )
+
+export const StyledIconButton = styled.button(
+   ({ theme: { colors } }) => css`
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      border-radius: 8px;
+      background: transparent;
+      border: 1px solid ${colors.dark['200']};
+      &:hover {
+         border: 1px solid transparent;
+         background: ${colors.dark['200']};
+      }
+   `
+)
