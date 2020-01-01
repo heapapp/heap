@@ -3,7 +3,7 @@ import { ThemeProvider } from 'styled-components'
 
 import { GlobalStyle, StyledLayout } from './styles'
 
-import { Header, Sidebar, Main } from '../../index'
+import { Sidebar, Main } from '../../index'
 
 const theme = {
    colors: {
@@ -36,7 +36,6 @@ const Layout = ({ children }) => (
    <ThemeProvider theme={theme}>
       <GlobalStyle />
       <StyledLayout>
-         <Header home="/" />
          <Sidebar />
          <Main>{children}</Main>
       </StyledLayout>

@@ -1,7 +1,18 @@
 import React from 'react'
 import Router, { useRouter } from 'next/router'
+import Link from 'next/link'
 
-import { StyledSidebar, Section, Header, List, ListItem } from './styles'
+import {
+   StyledSidebar,
+   Section,
+   List,
+   ListItem,
+   StyledHeader,
+   Brand,
+   Header,
+} from './styles'
+
+import Logo from '../../../assets/Logo'
 
 const Sidebar = () => {
    const router = useRouter()
@@ -14,6 +25,15 @@ const Sidebar = () => {
    ])
    return (
       <StyledSidebar>
+         <StyledHeader>
+            <Brand>
+               <Link href="/">
+                  <a>
+                     <Logo />
+                  </a>
+               </Link>
+            </Brand>
+         </StyledHeader>
          <Section>
             <Header>Code</Header>
             <List>

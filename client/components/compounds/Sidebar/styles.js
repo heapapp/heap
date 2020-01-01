@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const StyledSidebar = styled.aside`
    width: 240px;
-   height: calc(100vh - 64px);
+   height: 100vh;
    background: ${({ theme }) => theme.colors.dark['300']};
 `
 
@@ -39,4 +39,18 @@ export const ListItem = styled.li`
    &:hover {
       background: ${({ theme }) => theme.colors.dark['400']};
    }
+`
+
+export const StyledHeader = styled.header`
+   height: 64px;
+   display: flex;
+   align-items: center;
+`
+export const Brand = styled.div`
+   width: 240px;
+   display: flex;
+   height: inherit;
+   padding: 0 16px;
+   align-items: center;
+   background: ${({ theme }) => theme.colors.blue['400']};
 `

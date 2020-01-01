@@ -64,13 +64,7 @@ export const GlobalStyle = createGlobalStyle`
 export const StyledLayout = styled.div`
    display: grid;
    grid-template-columns: 240px 1fr;
-   grid-template-rows: 64px 1fr;
-   grid-template-areas:
-      'head head'
-      'aside main';
-   > header {
-      grid-area: head;
-   }
+   grid-template-areas: 'aside main';
    > aside {
       grid-area: aside;
    }
