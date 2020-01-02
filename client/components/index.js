@@ -1,4 +1,4 @@
-import { Sidebar, Layout, Main, VideoPlayer } from './compounds'
+import { Sidebar, Layout, Main, VideoPlayer, Select } from './compounds'
 import {
    TextButton,
    IconButton,
@@ -17,6 +17,7 @@ export {
    Sidebar,
    Main,
    VideoPlayer,
+   Select,
    Video,
    TextButton,
    IconButton,
