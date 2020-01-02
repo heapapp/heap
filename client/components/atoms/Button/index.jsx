@@ -12,20 +12,17 @@ export const IconButton = ({ children, ...props }) => (
 
 export const ComboButton = ({ children, ...props }) => {
    const position = typeof children[0] === 'string' ? 'right' : 'left'
-   console.log(children)
+   if (position === 'left')
+      return (
+         <StyledComboButton position={position} {...props}>
+            <span>{children[0]}</span>
+            {children[1]}
+         </StyledComboButton>
+      )
    return (
       <StyledComboButton position={position} {...props}>
-         {position === 'left' ? (
-            <>
-               <span>{children[0]}</span>
-               {children[1]}
-            </>
-         ) : (
-            <>
-               {children[0]}
-               <span>{children[1]}</span>
-            </>
-         )}
+         {children[0]}
+         <span>{children[1]}</span>
       </StyledComboButton>
    )
 }
