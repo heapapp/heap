@@ -58,19 +58,22 @@ export const StyledIconButton = styled.button(
 export const StyledComboButton = styled.button(
    ({ theme: { colors, size }, type, typeColor, position }) =>
       css`
-         height: ${size.xl}px;
-         padding: 0 12px;
+         display: flex;
          cursor: pointer;
+         align-items: center;
+         height: ${size.xl}px;
+         color: ${colors.white};
          font-size: ${size.sm}px;
          border-radius: ${size.xs}px;
-         color: ${colors.white};
-         display: flex;
-         align-items: center;
-         svg {
-            margin: ${position === 'left'
-               ? `0 ${size.xs}px 0 0`
-               : `0 0 0 ${size.xs}px`};
-         }
+         line-height: ${size.xl - 2}px;
          ${selectType(colors, type, typeColor)}
+         padding: ${position === 'left' ? '0 12px 0 0' : '0 0 0 12px'};
+         span {
+            height: ${size.xl - 2}px;
+            width: ${size.lg}px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
       `
 )

@@ -10,11 +10,22 @@ export const IconButton = ({ children, ...props }) => (
    <StyledIconButton {...props}>{children}</StyledIconButton>
 )
 
-export const ComboButton = ({ children, ...props }) => (
-   <StyledComboButton
-      position={typeof children[0] === 'string' ? 'right' : 'left'}
-      {...props}
-   >
-      {children}
-   </StyledComboButton>
-)
+export const ComboButton = ({ children, ...props }) => {
+   const position = typeof children[0] === 'string' ? 'right' : 'left'
+   console.log(children)
+   return (
+      <StyledComboButton position={position} {...props}>
+         {position === 'left' ? (
+            <>
+               <span>{children[0]}</span>
+               {children[1]}
+            </>
+         ) : (
+            <>
+               {children[0]}
+               <span>{children[1]}</span>
+            </>
+         )}
+      </StyledComboButton>
+   )
+}
