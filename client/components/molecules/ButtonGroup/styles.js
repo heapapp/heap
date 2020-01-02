@@ -1,10 +1,11 @@
 import styled, { css } from 'styled-components'
 
 export const StyledGroup = styled.div(
-   ({ theme: { size } }) => css`
+   ({ theme: { size }, direction }) => css`
       display: flex;
       button {
-         margin-left: ${size.sm}px;
+         ${direction === 'left' && `margin-left: ${size.sm}px;`};
+         ${direction === 'right' && `margin-right: ${size.sm}px;`};
       }
    `
 )

@@ -2,8 +2,8 @@ import React from 'react'
 
 import { StyledGroup } from './styles'
 
-const ButtonGroup = ({ children }) => {
-   return <StyledGroup>{children}</StyledGroup>
+const ButtonGroup = ({ children, ...props }) => {
+   return <StyledGroup {...props}>{children}</StyledGroup>
 }
 
 export default ButtonGroup
