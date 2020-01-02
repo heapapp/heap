@@ -10,7 +10,7 @@ import {
    Input,
    Video,
 } from './atoms'
-import { Tags, Videos } from './molecules'
+import { Tags, Videos, PageHeading } from './molecules'
 
 export {
    Layout,
@@ -28,4 +28,5 @@ export {
    Tags,
    Videos,
    Input,
+   PageHeading,
 }

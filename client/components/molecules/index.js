@@ -1,4 +1,5 @@
 import Tags from './Tags'
 import Videos from './Videos'
+import PageHeading from './PageHeading'
 
-export { Tags, Videos }
+export { Tags, Videos, PageHeading }
