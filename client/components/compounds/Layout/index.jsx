@@ -5,6 +5,7 @@ import { GlobalStyle, StyledLayout } from './styles'
 
 import { Sidebar, Main } from '../../index'
 
+const basePt = 8
 const theme = {
    colors: {
       dark: {
@@ -29,6 +30,14 @@ const theme = {
       h3: { fS: '24px', fW: 500, lH: '36px' },
       h4: { fS: '20px', fW: 400, lH: '30px' },
       h5: { fS: '18px', fW: 300, lH: '27px' },
+   },
+   size: {
+      xs: basePt,
+      sm: basePt * 2,
+      md: basePt * 3,
+      lg: basePt * 4,
+      xl: basePt * 5,
+      xxl: basePt * 6,
    },
 }
 

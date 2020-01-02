@@ -29,23 +29,23 @@ const selectType = (colors, type, typeColor) => {
 }
 
 export const StyledTextButton = styled.button(
-   ({ theme: { colors }, type, typeColor }) => css`
-      height: 40px;
+   ({ theme: { colors, size }, type, typeColor }) => css`
+      height: ${size.xl}px;
       padding: 0 12px;
       cursor: pointer;
-      font-size: 16px;
-      border-radius: 8px;
+      font-size: ${size.sm}px;
+      border-radius: ${size.xs}px;
       color: ${colors.white};
       ${selectType(colors, type, typeColor)}
    `
 )
 
 export const StyledIconButton = styled.button(
-   ({ theme: { colors } }) => css`
-      width: 40px;
-      height: 40px;
+   ({ theme: { colors, size } }) => css`
+      width: ${size.xl}px;
+      height: ${size.xl}px;
       cursor: pointer;
-      border-radius: 8px;
+      border-radius: ${size.xs}px;
       background: transparent;
       border: 1px solid ${colors.dark['200']};
       &:hover {
@@ -56,18 +56,20 @@ export const StyledIconButton = styled.button(
 )
 
 export const StyledComboButton = styled.button(
-   ({ theme: { colors }, type, typeColor, position }) =>
+   ({ theme: { colors, size }, type, typeColor, position }) =>
       css`
-         height: 40px;
+         height: ${size.xl}px;
          padding: 0 12px;
          cursor: pointer;
-         font-size: 16px;
-         border-radius: 8px;
+         font-size: ${size.sm}px;
+         border-radius: ${size.xs}px;
          color: ${colors.white};
          display: flex;
          align-items: center;
          svg {
-            margin: ${position === 'left' ? '0 8px 0 0' : '0 0 0 8px'};
+            margin: ${position === 'left'
+               ? `0 ${size.xs}px 0 0`
+               : `0 0 0 ${size.xs}px`};
          }
          ${selectType(colors, type, typeColor)}
       `

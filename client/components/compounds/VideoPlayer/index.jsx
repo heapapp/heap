@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactHtmlParser from 'react-html-parser'
 
-import { Button, Heading, Para } from '../../index'
+import { ComboButton, Heading, Para } from '../../index'
 
 import { StyledVideoPlayer, StyledVideo, Description } from './styles'
 
@@ -21,14 +21,14 @@ const VideoPlayer = ({ data }) => {
    return (
       <StyledVideoPlayer>
          <header>
-            <Button
-               position="left"
-               variant="secondary"
-               withIcon={<ArrowLeft />}
+            <ComboButton
+               type="outline"
+               typeColor="dark.200"
                onClick={() => window.history.back()}
             >
+               <ArrowLeft />
                Back
-            </Button>
+            </ComboButton>
          </header>
          <main>
             <StyledVideo>

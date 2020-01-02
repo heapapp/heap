@@ -1,33 +1,37 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const StyledVideo = styled.div`
    cursor: pointer;
 `
 
-export const Thumbnail = styled.div`
-   height: auto;
-   overflow: hidden;
-   border-radius: 8px;
-   padding-top: 56.25%;
-   margin-bottom: 16px;
-   position: relative;
-   background: ${({ theme }) => theme.colors.dark['200']};
-   img {
-      position: absolute;
-      top: -16.5%;
-      width: 100%;
-   }
-`
+export const Thumbnail = styled.div(
+   ({ theme: { colors, size } }) => css`
+      height: auto;
+      overflow: hidden;
+      border-radius: ${size.xs}px;
+      padding-top: 56.25%;
+      margin-bottom: ${size.sm}px;
+      position: relative;
+      background: ${colors.dark['200']};
+      img {
+         position: absolute;
+         top: -16.5%;
+         width: 100%;
+      }
+   `
+)
 
-export const Details = styled.div`
-   display: grid;
-   grid-template-columns: 40px 1fr;
-   grid-column-gap: 16px;
-   span {
-      height: 40px;
-      width: 40px;
-      border-radius: 50%;
-      display: inline-block;
-      background: ${({ theme }) => theme.colors.dark['200']};
-   }
-`
+export const Details = styled.div(
+   ({ theme: { colors, size } }) => css`
+      display: grid;
+      grid-template-columns: ${size.xl}px 1fr;
+      grid-column-gap: ${size.sm}px;
+      span {
+         height: ${size.xl}px;
+         width: ${size.xl}px;
+         border-radius: 50%;
+         display: inline-block;
+         background: ${colors.dark['200']};
+      }
+   `
+)
