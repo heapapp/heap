@@ -16,7 +16,6 @@ export {
    Layout,
    Sidebar,
    Main,
-   VideoPlayer,
    Select,
    Video,
    TextButton,
