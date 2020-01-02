@@ -10,6 +10,13 @@ export const StyledMain = styled.main(
          overflow-y: auto;
          border-radius: ${size.xs}px;
          background: ${colors.dark['300']};
+         &::-webkit-scrollbar {
+            width: ${size.xs}px;
+         }
+         &::-webkit-scrollbar-thumb {
+            border-radius: ${size.xs}px;
+            background-color: ${colors.dark['200']};
+         }
       }
    `
 )
