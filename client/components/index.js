@@ -1,4 +1,4 @@
-import { Sidebar, Layout, Main, VideoPlayer, Select } from './compounds'
+import { Sidebar, Layout, Main, Select } from './compounds'
 import {
    TextButton,
    IconButton,
@@ -10,7 +10,7 @@ import {
    Input,
    Video,
 } from './atoms'
-import { Tags, Videos, PageHeading } from './molecules'
+import { Tags, Videos, PageHeading, PageHeader } from './molecules'
 
 export {
    Layout,
@@ -29,4 +29,5 @@ export {
    Videos,
    Input,
    PageHeading,
+   PageHeader,
 }
