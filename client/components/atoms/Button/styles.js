@@ -15,7 +15,8 @@ const selectType = (colors, type, typeColor) => {
          return css`
             background: transparent;
             border: 1px solid ${color};
-            &:hover {
+            &:hover,
+            &:focus {
                background: ${color};
                border: 1px solid transparent;
             }
@@ -48,7 +49,8 @@ export const StyledIconButton = styled.button(
       border-radius: ${size.xs}px;
       background: transparent;
       border: 1px solid ${colors.dark['200']};
-      &:hover {
+      &:hover,
+      &:focus {
          border: 1px solid transparent;
          background: ${colors.dark['200']};
       }

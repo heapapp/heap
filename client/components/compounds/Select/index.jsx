@@ -9,8 +9,15 @@ const Select = ({ options, selected, placeholder, onSelect }) => {
    return (
       <StyledSelect>
          <Input
+            tabIndex="0"
             title={selected || placeholder}
             onClick={() => setOptionVisibility(!isOptionsVisible)}
+            onKeyPress={e => {
+               if (e.key === ' ') {
+                  e.preventDefault()
+                  setOptionVisibility(!isOptionsVisible)
+               }
+            }}
          >
             <div>{selected || placeholder}</div>
             <div data-type="icon">
@@ -46,12 +53,20 @@ const Select = ({ options, selected, placeholder, onSelect }) => {
             <Options>
                {options.map(option => (
                   <Option
+                     tabIndex="0"
                      key={option.id}
                      title={option.title}
                      isSelected={selected === option.title}
                      onClick={() => {
                         onSelect(option.title)
                         setOptionVisibility(!isOptionsVisible)
+                     }}
+                     onKeyPress={e => {
+                        if (e.key === ' ') {
+                           e.preventDefault()
+                           onSelect(option.title)
+                           setOptionVisibility(!isOptionsVisible)
+                        }
                      }}
                   >
                      {option.title}

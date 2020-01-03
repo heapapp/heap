@@ -2,6 +2,10 @@ import styled, { css } from 'styled-components'
 
 export const StyledVideo = styled.div`
    cursor: pointer;
+   &:hover,
+   &:focus {
+      outline: -webkit-focus-ring-color auto 1px;
+   }
 `
 
 export const Thumbnail = styled.div(

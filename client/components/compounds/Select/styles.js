@@ -8,9 +8,6 @@ export const StyledSelect = styled.div(
       border-radius: ${size.xs}px;
       cursor: pointer;
       border: 1px solid ${colors.dark['200']};
-      &:hover {
-         background: ${colors.dark['200']};
-      }
    `
 )
 
@@ -21,6 +18,10 @@ export const Input = styled.div(
       align-items: center;
       grid-template-columns: 1fr ${size.lg}px ${size.lg}px;
       color: ${colors.blue['100']};
+      &:hover,
+      &:focus {
+         background: ${colors.dark['200']};
+      }
       div:first-child {
          height: ${size.xl - 2}px;
          display: flex;
@@ -81,7 +82,8 @@ export const Option = styled.div(
       padding: 0 12px;
       align-items: center;
       background: ${isSelected && colors.dark['300']};
-      &:hover {
+      &:hover,
+      &:focus {
          background: ${colors.dark['300']};
       }
    `

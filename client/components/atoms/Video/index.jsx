@@ -7,7 +7,16 @@ import { StyledVideo, Thumbnail, Details } from './styles'
 
 const Video = ({ data }) => {
    return (
-      <StyledVideo onClick={() => Router.push(`/video/${data.id.videoId}`)}>
+      <StyledVideo
+         tabIndex="0"
+         onClick={() => Router.push(`/video/${data.id.videoId}`)}
+         onKeyPress={e => {
+            if (e.key === ' ') {
+               e.preventDefault()
+               return Router.push(`/video/${data.id.videoId}`)
+            }
+         }}
+      >
          <Thumbnail>
             <img
                src={data.snippet.thumbnails.high.url}
