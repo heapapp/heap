@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
    * {
@@ -37,17 +37,5 @@ export const GlobalStyle = createGlobalStyle`
       font-style: normal;
       font-weight: 500;
       src: url('/static/fonts/RoobertMedium.woff') format('woff');
-   }
-`
-
-export const StyledLayout = styled.div`
-   display: grid;
-   grid-template-columns: 240px 1fr;
-   grid-template-areas: 'aside main';
-   > aside {
-      grid-area: aside;
-   }
-   > main {
-      grid-area: main;
    }
 `

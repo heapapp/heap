@@ -3,11 +3,11 @@ import styled, { css } from 'styled-components'
 export const StyledMain = styled.main(
    ({ theme: { colors, size } }) => css`
       padding: ${size.sm}px;
-      height: 100vh;
+      height: calc(100vh - 56px);
       > div {
          height: 100%;
-         padding: ${size.sm}px;
          overflow-y: auto;
+         padding: ${size.sm}px;
          border-radius: ${size.xs}px;
          background: ${colors.dark['300']};
          &::-webkit-scrollbar {

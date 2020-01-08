@@ -2,17 +2,15 @@ import React from 'react'
 
 import { HeapThemeProvider } from '@heapapp/ui'
 
-import { GlobalStyle, StyledLayout } from './styles'
+import { GlobalStyle } from './styles'
 
-import { Sidebar, Main } from '../'
+import { Header, Main } from '../'
 
 const Layout = ({ children }) => (
    <HeapThemeProvider>
       <GlobalStyle />
-      <StyledLayout>
-         <Sidebar />
-         <Main>{children}</Main>
-      </StyledLayout>
+      <Header />
+      <Main>{children}</Main>
    </HeapThemeProvider>
 )
 

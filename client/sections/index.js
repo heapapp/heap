@@ -1,5 +1,5 @@
-import Sidebar from './Sidebar'
 import Layout from './Layout'
 import Main from './Main'
+import Header from './Header'
 
-export { Sidebar, Layout, Main }
+export { Layout, Main, Header }
