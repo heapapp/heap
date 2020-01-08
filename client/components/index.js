@@ -1,34 +1,5 @@
-import { Sidebar, Layout, Main, Select } from './compounds'
-import {
-   TextButton,
-   IconButton,
-   ComboButton,
-   Tag,
-   Heading,
-   Para,
-   Anchor,
-   Input,
-   Video,
-} from './atoms'
-import { Tags, Videos, PageHeading, PageHeader, ButtonGroup } from './molecules'
+import { Sidebar, Layout, Main } from './compounds'
+import { Video } from './atoms'
+import { Videos, PageHeading, PageHeader } from './molecules'
 
-export {
-   Layout,
-   Sidebar,
-   Main,
-   Select,
-   Video,
-   TextButton,
-   IconButton,
-   ComboButton,
-   Tag,
-   Heading,
-   Para,
-   Anchor,
-   Tags,
-   Videos,
-   Input,
-   PageHeading,
-   PageHeader,
-   ButtonGroup,
-}
+export { Layout, Sidebar, Main, Video, Videos, PageHeading, PageHeader }
