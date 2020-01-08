@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Like = ({ size = 16, color = '#fff' }) => (
+const LikeIcon = ({ size = 16, color = '#fff' }) => (
    <svg
       xmlns="http://www.w3.org/2000/svg"
       width={size}
@@ -16,4 +16,4 @@ const Like = ({ size = 16, color = '#fff' }) => (
    </svg>
 )
 
-export default Like
+export default LikeIcon

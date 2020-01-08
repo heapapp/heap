@@ -1,8 +1,19 @@
 import ArrowLeft from './ArrowLeft'
 import ArrowRight from './ArrowRight'
-import Like from './Like'
+import LikeIcon from './LikeIcon'
 import ArrowDown from './ArrowDown'
 import ArrowUp from './ArrowUp'
 import CloseIcon from './CloseIcon'
+import GearsIcon from './GearsIcon'
+import HeartIcon from './HeartIcon'
 
-export { ArrowLeft, ArrowRight, Like, ArrowDown, ArrowUp, CloseIcon }
+export {
+   ArrowLeft,
+   ArrowRight,
+   LikeIcon,
+   ArrowDown,
+   ArrowUp,
+   CloseIcon,
+   HeartIcon,
+   GearsIcon,
+}
