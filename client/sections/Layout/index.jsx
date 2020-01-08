@@ -4,7 +4,7 @@ import { HeapThemeProvider } from '@heapapp/ui'
 
 import { GlobalStyle, StyledLayout } from './styles'
 
-import { Sidebar, Main } from '../../index'
+import { Sidebar, Main } from '../'
 
 const Layout = ({ children }) => (
    <HeapThemeProvider>

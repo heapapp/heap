@@ -1,5 +1,5 @@
-import { Sidebar, Layout, Main } from './compounds'
-import { Video } from './atoms'
-import { Videos, PageHeading, PageHeader } from './molecules'
+import PageHeader from './PageHeader'
+import PageHeading from './PageHeading'
+import Video from './Video'
 
-export { Layout, Sidebar, Main, Video, Videos, PageHeading, PageHeader }
+export { PageHeader, PageHeading, Video }

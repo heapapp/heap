@@ -12,7 +12,7 @@ import {
    Header,
 } from './styles'
 
-import Logo from '../../../assets/Logo'
+import Logo from '../../assets/Logo'
 
 const Sidebar = () => {
    const router = useRouter()

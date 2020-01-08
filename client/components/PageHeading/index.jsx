@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Heading } from '../../index'
+import { Heading } from '@heapapp/ui'
 
 import { StyledHeading } from './styles'
 

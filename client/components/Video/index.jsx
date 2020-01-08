@@ -1,7 +1,7 @@
 import React from 'react'
 import Router from 'next/router'
 
-import { Heading } from '../../index'
+import { Heading } from '@heapapp/ui'
 
 import { StyledVideo, Thumbnail, Details } from './styles'
 
